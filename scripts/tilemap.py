@@ -2,19 +2,21 @@ import pygame
 
 TOUCHING = [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 0), (0, 1), (1, -1), (1, 0), (1, 1)]
 PHYSICS_TILES = {'grass', 'stone'}
+TILEs_ID = {'0': None, '1': 'stone'}
 
 
 class Tilemap:
-    def __init__(self, game, tile_size=16):
+    def __init__(self, game, map, tile_size=64,):
         self.game = game
+        self.map = map
         self.tile_size = tile_size
         self.tilemap = {}
         self.offgrid_tiles = []
 
-        for i in range(7):
-            self.tilemap[str(3 + i) + ';10'] = {'type': 'stone', 'variant': 1, 'pos': (3 + i, 10)}
-            self.tilemap['10;' + str(5 + i)] = {'type': 'grass', 'variant': 1, 'pos': (10, 5 + i)}
-            self.tilemap[str(3 + i) + ';10'] = {'type': 'stone', 'variant': 1, 'pos': (3 + i, 10)}
+        for i in range(len(map)):
+            for j in range(len(map[i])):
+                if TILEs_ID[map[i][j]]:
+                    self.tilemap[str(j) + f';{str(i)}'] = {'type': TILEs_ID[map[i][j]], 'variant': 1, 'pos': (j, i)}
 
     def tile_around(self, pos):
         tiles = []
