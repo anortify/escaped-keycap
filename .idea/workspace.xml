@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11a3a2ae-d94d-449f-8580-4c358527cc40" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PyProjGames.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PyProjGames.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/entities/player.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/entities/player.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/tiles/stone/0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/tiles/stone/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/tiles/stone/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/tiles/stone/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/tiles/stone/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/tiles/stone/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/tiles/stone/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/tiles/stone/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/tiles/stone/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/tiles/stone/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/tiles/stone/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/tiles/stone/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/tiles/stone/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/tiles/stone/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/tiles/stone/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/images/tiles/stone/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/images/tiles/stone/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entities.py" afterDir="false" />
+    <list default="true" id="11a3a2ae-d94d-449f-8580-4c358527cc40" name="Changes" comment="commit11111">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/maps/lvl1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/maps/lvl1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/tilemap.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/tilemap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +70,23 @@
       <option name="presentableId" value="Default" />
       <updated>1738702490352</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit11111">
+      <option name="closed" value="true" />
+      <created>1738784194715</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738784194715</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit11111">
+      <option name="closed" value="true" />
+      <created>1738784246195</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738784246195</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -95,5 +99,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit11111" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit11111" />
   </component>
 </project>

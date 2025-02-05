@@ -13,10 +13,10 @@ class Tilemap:
         self.tilemap = {}
         self.offgrid_tiles = []
 
-        for i in range(len(map)):
-            for j in range(len(map[i])):
-                if TILEs_ID[map[i][j]]:
-                    self.tilemap[str(j) + f';{str(i)}'] = {'type': TILEs_ID[map[i][j]], 'variant': 1, 'pos': (j, i)}
+        for i in range(len(self.map)):
+            for j in range(len(self.map[i])):
+                if TILEs_ID[self.map[i][j]]:
+                    self.tilemap[f'{str(j)};{str(i)}'] = {'type': TILEs_ID[self.map[i][j]], 'variant': 1, 'pos': (j, i)}
 
     def tile_around(self, pos):
         tiles = []
