@@ -2,7 +2,7 @@ import sys
 
 import pygame
 
-from scripts.utils import load_image, load_images, load_lvl
+from scripts.utils import load_image, load_images, load_lvls
 from scripts.entities import PhysicsEntity
 from scripts.tilemap import Tilemap
 
@@ -16,14 +16,13 @@ class Game:
         pygame.display.set_caption('escaped keycap')
         self.screen = pygame.display.set_mode((1600, 900))
         self.display = pygame.Surface((1600, 900))
-        self.lvl = load_lvl("lvl1.txt")
 
         self.clock = pygame.time.Clock()
 
         self.movement = [False, False]
 
         self.assets = {
-            'map': load_lvl("lvl1.txt"),
+            'map': load_lvls(),
             'background': load_images('background'),
             'decor': load_images('tiles/decor'),
             'grass': load_images('tiles/grass'),
@@ -34,7 +33,7 @@ class Game:
 
         self.player = PhysicsEntity(self, 'player', (100, 600), (57, 62))
 
-        self.tilemap = Tilemap(self, self.assets["map"], tile_size=64)
+        self.tilemap = Tilemap(self, self.assets["map"][0]["map"], tile_size=64)
 
     def run(self):
         is_facing_right = True

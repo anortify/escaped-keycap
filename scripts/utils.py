@@ -21,8 +21,11 @@ def load_images(path):
     return images
 
 
-def load_lvl(path):
-    lvl_map = []
-    with open((BASE_LVL_MAPS_PATH + path), "r") as f:
-        lvl_map = [list(i.rstrip('\n')) for i in f.readlines()]
-    return lvl_map
+def load_lvls():
+    lvl_maps = []
+    for map in sorted(os.listdir(BASE_LVL_MAPS_PATH)):
+        with open((BASE_LVL_MAPS_PATH + map), "r") as f:
+            g = f.readlines()
+            lvl_maps.append({"playerPos": g[-1], "map": [list(i.rstrip('\n')) for i in g[:-2]]})
+    print(lvl_maps)
+    return lvl_maps
